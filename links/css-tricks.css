@@ -1,0 +1,81 @@
+/* Сброс стилей */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/*Ячейки таблицы одинаковой ширины*/
+  .calendar {
+    table-layout: fixed;
+  }
+/*Дефолтный стиль для оформления ссылок*/
+  a[href]:not([class]) {
+    color: #008000;
+    text-decoration: underline;
+  }
+/*Укажите стили для битых изображений*/
+  img {
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    height: auto;
+    line-height: 2;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  img:before {
+    content: "Упс, изображение ниже поломалось :(";
+    display: block;
+    margin-bottom: 10px;
+  }
+   
+  img:after {
+    content: "(url: " attr(src) ")";
+    display: block;
+    font-size: 12px;
+  }
+
+/* Воспользуйтесь rem для глобальных размеров и em для локальных размеров */
+html { font-size: 100%; }
+h2 {
+    font-size: 2em;
+  }
+   
+  p {
+    font-size: 1em;
+  }
+  article {
+    font-size: 1.25rem;
+  }
+   
+  aside .module {
+    font-size: .9rem;
+  }
+/*Выключите автовоспроизведение видео со звуком*/
+  video[autoplay]:not([muted]) {
+    display: none;
+  }
+
+/*
+Примените :root для шрифтов
+Размер шрифта должен подстраиваться под каждый возможный размер экрана. У вас есть возможность подсчитывать размер шрифта, базируясь на таких величинах, как высота и ширина экрана, при помощи :root:
+*/
+:root {
+    font-size: calc(1vw + 1vh + .5vmin);
+  }
+  body {
+    font: 1rem/1.6 sans-serif;
+  }
+
+  /*
+  
+  Оптимизация просмотра на мобильных устройствах, с помощью font-size*/
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 16px;
+  }
