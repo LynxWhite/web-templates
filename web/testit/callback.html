@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>callback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="callback.css">
+</head>
+
+<body>
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="padding: 0px 50px;">
+                <div class="modal-header" style="border: none;">
+                    <h4 class="modal-title text-center">
+                        Оставьте свои контактные данные и мы обязательно свяжемся с вами в ближайшее время!
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form class="callback-form">
+                        <input class="login-input" type="text" placeholder="Имя" class="form-control" id="name">
+                        <input class="login-input" type="tel" placeholder="Телефон" class="form-control" id="phone">
+                        <input class="login-input" type="email" placeholder="Email" class="form-control" id="email">
+                        <div class="checkbox">
+                            <label class="callback-label">
+                                <input type="checkbox" id='accept'> 
+                                    Я принимаю условия передачи информации 
+                            </label>
+                        </div>
+                        <input type="submit" class="btn button">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
